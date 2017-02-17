@@ -110,7 +110,6 @@ repolist: 36,604
 ```
 
 
-### Setup user and group
 
 
 ### cat /etc/passwd
