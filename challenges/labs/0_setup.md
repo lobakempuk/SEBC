@@ -108,3 +108,45 @@ rhui-REGION-rhel-server-rhscl             Red Hat Enterprise Linux Server  7,509
 repolist: 36,604
 [root@ip-172-31-16-218 ~]#
 ```
+
+
+### Setup user and group
+
+
+### cat /etc/passwd
+```
+[root@ip-172-31-16-218 ~]# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+.
+.
+.
+oprofile:x:16:16:Special user account to be used by OProfile:/home/oprofile:/sbi                                                                                     n/nologin
+ec2-user:x:500:500::/home/ec2-user:/bin/bash
+raffles:x:2000:3002::/home/raffles:/bin/bash
+fullerton:x:3000:3001::/home/fullerton:/bin/bash
+[root@ip-172-31-16-218 ~]#
+```
+
+### cat /etc/group
+```
+[root@ip-172-31-16-218 ~]# cat /etc/group
+root:x:0:
+bin:x:1:bin,daemon
+daemon:x:2:bin,daemon
+sys:x:3:bin,adm
+adm:x:4:adm,daemon
+tty:x:5:
+disk:x:6:
+.
+.
+.
+.
+oprofile:x:16:
+ec2-user:x:500:
+raffles:x:2000:
+fullerton:x:3000:
+hotels:x:3001:
+shops:x:3002:
+[root@ip-172-31-16-218 ~]#
+```
